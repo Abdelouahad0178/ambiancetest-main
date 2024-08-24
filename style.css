@@ -1,0 +1,156 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#scene-container {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    width: 70%;
+    height: 70vh;
+}
+
+.controls {
+    margin-top: 20px;
+    text-align: center;
+}
+
+button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#items-container {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.draggable-item {
+    width: 50px;
+    height: 50px;
+    cursor: grab;
+}
+
+/* Media Queries */
+
+/* Largeur d'écran ≥ 1440px */
+@media screen and (min-width: 1440px) {
+    #scene-container {
+        width: 70%;
+        height: 70vh;
+    }
+}
+
+/* Largeur d'écran entre 1024px et 1439px */
+@media screen and (max-width: 1439px) and (min-width: 1024px) {
+    #scene-container {
+        width: 80%;
+        height: 60vh;
+    }
+}
+
+/* Largeur d'écran entre 992px et 1023px */
+@media screen and (max-width: 1023px) and (min-width: 992px) {
+    #scene-container {
+        width: 90%;
+        height: 55vh;
+    }
+}
+
+/* Largeur d'écran entre 820px et 991px */
+@media screen and (max-width: 991px) and (min-width: 820px) {
+    #scene-container {
+        width: 95%;
+        height: 50vh;
+    }
+    button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+/* Largeur d'écran entre 770px et 819px */
+@media screen and (max-width: 819px) and (min-width: 770px) {
+    #scene-container {
+        width: 100%;
+        height: 50vh;
+    }
+    button {
+        padding: 7px 14px;
+        font-size: 13px;
+    }
+}
+
+.controls {
+    text-align: center;
+    margin-top: 53%;
+    color: white;
+}
+
+/* Largeur d'écran entre 425px et 769px */
+@media screen and (max-width: 769px) and (min-width: 425px) {
+    #scene-container {
+        width: 100%;
+        height: 45vh;
+    }
+    button {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+}
+
+/* Largeur d'écran entre 412px et 424px */
+@media screen and (max-width: 424px) and (min-width: 412px) {
+    #scene-container {
+        width: 100%;
+        height: 40vh;
+    }
+    button {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+}
+
+/* Largeur d'écran entre 375px et 411px */
+@media screen and (max-width: 411px) and (min-width: 375px) {
+    #scene-container {
+        width: 100%;
+        height: 35vh;
+    }
+    button {
+        padding: 5px 10px;
+        font-size: 11px;
+    }
+}
+
+/* Largeur d'écran ≤ 374px */
+@media screen and (max-width: 374px) {
+    #scene-container {
+        width: 100%;
+        height: 30vh;
+    }
+    button {
+        padding: 5px 10px;
+        font-size: 10px;
+    }
+}

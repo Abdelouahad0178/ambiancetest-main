@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisation 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            min-height: 100vh;
+            background-color: #f0f0f0;
+        }
+        #scene-container {
+            width: 800px;
+            height: 600px;
+            background-color: #ffffff;
+            border: 1px solid #ccc;
+        }
+        #items-container {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+        }
+        .draggable-item {
+            width: 50px;
+            height: 50px;
+            cursor: grab;
+        }
+        .controls {
+            margin-top: 20px;
+        }
+        button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>Visualisation 3D</h1>
+
+    <div id="items-container">
+        <img id="lavabo" class="draggable-item" src="images/IMG-20240212-WA0041.jpg" draggable="true" alt="Lavabo">
+        <img id="miroir" class="draggable-item" src="images/CORE_DECOR_COLD_60X60.jpg" draggable="true" alt="Miroir">
+        <img id="bidet" class="draggable-item" src="images/1Chalet_Cervinia-honey_20_122cm.jpg" draggable="true" alt="Bidet">
+    </div>
+
+    <div id="scene-container"></div>
+
+    <div class="controls">
+        <button id="floorTexture1">Changer Texture Sol</button>
+        <button id="wallTexture1">Changer Texture Mur de Face</button>
+        <button id="wallTexture2">Changer Texture Mur Gauche</button>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
